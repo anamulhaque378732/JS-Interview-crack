@@ -1,0 +1,22 @@
+// valid parentheses
+
+const validParentheses = (str) => {
+  let stack = [],
+    map = { "(": ")", "{": "}", "[": "]" };
+
+  for (let char of str) {
+    if (char in map) {
+      stack.push(char);
+    } else {
+      let top = stack.pop();
+      if (map[top] !== char) return false;
+    }
+  }
+
+  return stack.length === 0;
+}; // time complexity O(n) space complexity O(n)
+ 
+let str = "(){}[]",
+  str2 = "(]";
+console.log(validParentheses(str));
+console.log(validParentheses(str2));
