@@ -2,9 +2,9 @@
 /**
  * 1. Execution Context
  * 2. Call Stack
- * 3.Hoisting
+ * 3. Hoisting
  * 4. Scope (Global, Function, Block)
- * 5.Lexical Scope
+ * 5. Lexical Scope
  * 6. Closures ⭐
  * 7. this keyword
  * 8. Arrow Function vs Regular Function
@@ -16,7 +16,7 @@
  */
 // Intermediate level
 /**
- *13. Callback Functions
+ * 13. Callback Functions
  * 14. Higher Order Functions
  * 15. Array Methods (map, filter, reduce, find, some, every)
  * 16. Promises
