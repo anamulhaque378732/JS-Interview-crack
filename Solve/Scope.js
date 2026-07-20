@@ -30,4 +30,26 @@ function test() {
   console.log(x); // ?
 }
 
+// test();
+
+// 1
+console.log(a);
+let a = 10;
+// ReferenceError
+
+// 2
+hello();
+var hello = function () {};
+// TypeError
+
+// 3
 test();
+function test() {
+  test();
+}
+// RangeError
+
+// 4
+console.log(x);
+// x কোথাও declare-ই করা হয়নি
+// ReferenceError
